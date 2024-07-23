@@ -1,7 +1,7 @@
 FROM php:8.3-fpm
 
 RUN apt-get update \
-  && apt-get install -y zlib1g-dev mariadb-client vim libzip-dev \
+  && apt-get install -y zlib1g-dev mariadb-client vim libzip-dev nodejs npm \
   && docker-php-ext-install zip pdo_mysql
 
   
@@ -15,7 +15,7 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /composer
 
 ENV PATH $PATH:/composer/vendor/bin
-
+EXPOSE 5173
 
 WORKDIR /var/www
 
