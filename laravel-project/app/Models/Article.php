@@ -11,10 +11,10 @@ class Article extends Model
 {
     use HasFactory;
 
-    protected $fillable = ["title", "excerpt", "body"];
+    protected $fillable = ["title", "excerpt", "body", "user_id"];
 
-    public function auther() {
-        return $this->belongsTo(User::class);
+    public function author() {
+        return $this->belongsTo(User::class, "user_id", "id");
     }
 }
 
