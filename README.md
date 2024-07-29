@@ -1,4 +1,5 @@
 ### setup
 - docker-compose up -d
 ###　inertia
-- (appコンテナ内) npm run dev
+- (appコンテナ内) npm install 
+- npm run dev

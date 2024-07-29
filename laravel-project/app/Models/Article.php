@@ -13,6 +13,8 @@ class Article extends Model
 
     protected $fillable = ["title", "excerpt", "body", "user_id"];
 
+    protected $dateFormat = "Y/m/d H:i.s";
+
     public function author() {
         return $this->belongsTo(User::class, "user_id", "id");
     }
