@@ -36,7 +36,5 @@ services:
   phpmyadmin:
     container_name: test_phpmyadmin
     image: phpmyadmin
-    environment:
-      - PMA_HOST=mysql
     ports:
       - 8080:80

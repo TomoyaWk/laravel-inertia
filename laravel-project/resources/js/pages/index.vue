@@ -14,7 +14,7 @@
             v-for="article in articles" :key="article.id"
             class="flex justify-center items-center shadow bg-white rounded-xl p-4 mx-auto max-w-3xl"
             >
-            <img src="../../images/dog_icon.png"
+            <img src="../../images/dummy.png"
             class="w-32 h-32 rounded-xl object-cover border-2"
             alt="Article thumbnail" />
             <div class="flex flex-col text-left justify-between pl-3 space-y-5">
